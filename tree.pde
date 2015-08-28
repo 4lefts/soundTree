@@ -5,7 +5,7 @@ void tree(float x, float y, float s) {
   translate(x, y);
   //draw trunk;
   strokeWeight(s/10);
-  stroke(0, 130);
+  stroke(100);
   strokeCap(PROJECT);
   line(0, 0, 0, -s);
   //move to the end of the trunk
@@ -23,7 +23,7 @@ void branch(float l) {
     pushMatrix();
     pushStyle();
     strokeWeight(l/10);
-    stroke(0, 130);
+    stroke(100);
     rotate(ang);
     line(0, 0, 0, -l);
     translate(0, -l);
@@ -35,7 +35,7 @@ void branch(float l) {
     pushMatrix();
     pushStyle();
     strokeWeight(l/10);
-    stroke(0, 130);
+    stroke(100);
     rotate(-ang);
     line(0, 0, 0, -l);
     translate(0, -l);
